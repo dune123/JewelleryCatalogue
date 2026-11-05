@@ -1,14 +1,14 @@
 /**
- * Single source of truth for the Prince Jewellery catalogue.
+ * Single source of truth for the Prince Jewellers catalogue.
  * Change names, copy, and contact details here — components read this file only.
  */
 export const site = {
-  name: 'Prince Jewellery',
+  name: 'Prince Jewellers',
   wordmark: 'Prince',
-  categoryLine: 'Jewellery',
+  categoryLine: 'Jewellers',
   tagline: 'Jewellery That Defines You',
   description:
-    'Prince Jewellery is a photograph-led catalogue of modern, quietly made pieces. Enquire about any piece by WhatsApp or email.',
+    'Prince Jewellers is a photograph-led catalogue of modern, quietly made pieces. Enquire about any piece by WhatsApp or email.',
   // TODO: replace with the live site URL (used for Open Graph and structured data)
   url: 'https://princejewellery.example',
   locale: 'en-IN',
@@ -37,14 +37,14 @@ export const site = {
     eyebrow: 'The House',
     title: 'Quiet pieces, made to be lived in',
     paragraphs: [
-      'Prince Jewellery is a house of modern elegance — jewellery shaped with care, worn close, and kept long after a season has passed.',
+      'Prince Jewellers is a house of modern elegance — jewellery shaped with care, worn close, and kept long after a season has passed.',
       'Each piece is chosen for its craftsmanship and the story it carries: a line of light at the collarbone, a ring that becomes familiar, earrings that catch the day without asking for it.',
       'This catalogue is a first look. Names and prices can be filled in as they are decided. Until then, enquire about anything that stays with you.',
     ],
   },
   topPieces: {
     eyebrow: 'Top pieces',
-    title: 'The fish',
+    title: 'Dhanteras special',
     intro: 'A silver fish, kept close and given often.',
   },
   collections: {

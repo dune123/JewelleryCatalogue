@@ -7,7 +7,7 @@ import { useCart } from '../hooks/useCart'
 import { ThemeToggle } from './ThemeToggle'
 
 const links = [
-  { href: '#top-pieces', label: 'The fish' },
+  { href: '#top-pieces', label: 'Dhanteras special' },
   { href: '#collections', label: 'Collections' },
   { href: '#lookbook', label: 'Lookbook' },
   { href: '#about', label: 'About' },

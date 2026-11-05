@@ -2,8 +2,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion
 import { useEffect, useRef, useState } from 'react'
 import { Logo, Mark } from '../assets/logo/Logo'
 import { site } from '../config/site'
-import { heroItems } from '../data/catalog'
-import { PhotoImage } from '../components/PhotoImage'
+import { heroSlides } from '../data/heroSlides'
 
 export function Hero() {
   const reduce = useReducedMotion()
@@ -11,7 +10,7 @@ export function Hero() {
   const { scrollYProgress } = useScroll({ target: frame, offset: ['start start', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '12%'])
   const [index, setIndex] = useState(0)
-  const items = heroItems
+  const items = heroSlides
 
   useEffect(() => {
     if (reduce || items.length < 2) return
@@ -31,16 +30,17 @@ export function Hero() {
           if (!nearby) return null
           return (
             <div
-              key={item.id}
+              key={item.src}
               className="absolute inset-0 transition-opacity duration-[1800ms] ease-in-out"
               style={{ opacity: itemIndex === index ? 1 : 0 }}
             >
-              <PhotoImage
-                item={item}
-                fill
-                priority={itemIndex === 0}
-                sizes="100vw"
+              <img
+                src={item.src}
                 alt=""
+                className="absolute inset-0 h-full w-full object-cover"
+                loading={itemIndex === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                fetchPriority={itemIndex === 0 ? 'high' : 'auto'}
               />
             </div>
           )

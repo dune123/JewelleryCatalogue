@@ -14,49 +14,91 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
   const reduce = useReducedMotion()
   const scroller = useRef<HTMLDivElement>(null)
   const paused = useRef(false)
+  const activeRef = useRef(0)
   const [canScroll, setCanScroll] = useState(false)
   const [active, setActive] = useState(0)
+  const [stops, setStops] = useState(1)
 
-  function readIndex(el: HTMLDivElement) {
-    const card = el.querySelector('article')
-    const amount = (card?.getBoundingClientRect().width ?? el.clientWidth) + 16
-    return Math.max(0, Math.min(topSellers.length - 1, Math.round(el.scrollLeft / amount)))
+  function cards(el: HTMLDivElement) {
+    return [...el.querySelectorAll<HTMLElement>(':scope > article')]
   }
 
-  function goTo(index: number) {
-    const el = scroller.current
-    const card = el?.querySelector('article')
-    if (!el || !card) return
-    const amount = card.getBoundingClientRect().width + 16
-    el.scrollTo({ left: amount * index, behavior: reduce ? 'auto' : 'smooth' })
+  function stopPositions(el: HTMLDivElement) {
+    const slides = cards(el)
+    const maxScroll = Math.max(0, el.scrollWidth - el.clientWidth)
+    const positions = [0]
+    for (let index = 1; index < slides.length; index += 1) {
+      const left = Math.min(slides[index].offsetLeft, maxScroll)
+      if (left <= positions[positions.length - 1] + 1) continue
+      positions.push(left)
+      if (left >= maxScroll - 1) break
+    }
+    return positions
   }
 
-  function step(direction: 1 | -1) {
+  function nearestStop(el: HTMLDivElement) {
+    const positions = stopPositions(el)
+    let best = 0
+    let bestDistance = Number.POSITIVE_INFINITY
+    positions.forEach((left, index) => {
+      const distance = Math.abs(left - el.scrollLeft)
+      if (distance < bestDistance) {
+        best = index
+        bestDistance = distance
+      }
+    })
+    return best
+  }
+
+  function scrollToIndex(index: number) {
     const el = scroller.current
     if (!el) return
-    const card = el.querySelector('article')
-    const gap = 16
-    const amount = (card?.getBoundingClientRect().width ?? el.clientWidth) + gap
-    const max = el.scrollWidth - el.clientWidth
-    const next = el.scrollLeft + direction * amount
-    const left = next > max + 4 ? 0 : next < -4 ? max : next
-    el.scrollTo({ left, behavior: reduce ? 'auto' : 'smooth' })
+    const positions = stopPositions(el)
+    const count = positions.length
+    const next = ((index % count) + count) % count
+    activeRef.current = next
+    setActive(next)
+    setStops(count)
+    el.scrollTo({ left: positions[next], behavior: 'auto' })
   }
 
   useEffect(() => {
     const el = scroller.current
     if (!el) return
-    const update = () => setCanScroll(el.scrollWidth - el.clientWidth > 8)
+    const update = () => {
+      const positions = stopPositions(el)
+      setCanScroll(el.scrollWidth - el.clientWidth > 8)
+      setStops(positions.length)
+      if (activeRef.current > positions.length - 1) {
+        activeRef.current = positions.length - 1
+        setActive(positions.length - 1)
+        el.scrollTo({ left: positions[positions.length - 1], behavior: 'auto' })
+      }
+    }
+    const onScrollEnd = () => {
+      const positions = stopPositions(el)
+      const index = nearestStop(el)
+      activeRef.current = index
+      setActive(index)
+      setStops(positions.length)
+      if (Math.abs(el.scrollLeft - positions[index]) > 2) {
+        el.scrollTo({ left: positions[index], behavior: 'auto' })
+      }
+    }
     update()
     const observer = new ResizeObserver(update)
     observer.observe(el)
-    return () => observer.disconnect()
+    el.addEventListener('scrollend', onScrollEnd)
+    return () => {
+      observer.disconnect()
+      el.removeEventListener('scrollend', onScrollEnd)
+    }
   }, [])
 
   useEffect(() => {
     if (reduce || !canScroll) return
     const timer = window.setInterval(() => {
-      if (!paused.current) step(1)
+      if (!paused.current) scrollToIndex(activeRef.current + 1)
     }, 5000)
     return () => window.clearInterval(timer)
   }, [reduce, canScroll])
@@ -77,7 +119,7 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
             <div className="flex shrink-0 gap-2">
               <button
                 type="button"
-                onClick={() => step(-1)}
+                onClick={() => scrollToIndex(activeRef.current - 1)}
                 aria-label="Previous top piece"
                 className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)] transition-colors duration-300 hover:bg-fg/5"
               >
@@ -85,7 +127,7 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
               </button>
               <button
                 type="button"
-                onClick={() => step(1)}
+                onClick={() => scrollToIndex(activeRef.current + 1)}
                 aria-label="Next top piece"
                 className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)] transition-colors duration-300 hover:bg-fg/5"
               >
@@ -109,11 +151,10 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
           onBlurCapture={(event) => {
             if (!event.currentTarget.contains(event.relatedTarget)) paused.current = false
           }}
-          onScroll={(event) => setActive(readIndex(event.currentTarget))}
-          className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="relative mt-8 flex gap-4 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {topSellers.map((item, index) => (
-            <article key={item.id} className="group w-[78%] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)]">
+            <article key={item.id} className="group w-full min-w-0 shrink-0 sm:w-[calc((100%-2rem)/3)]">
               <div className="relative">
                 <button
                   type="button"
@@ -128,25 +169,27 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
                 <SaveButton item={item} floating className="absolute right-3 top-3 z-10" />
               </div>
               <div className="mt-4">
-                <p className="font-label text-[0.68rem] uppercase tracking-[0.18em] text-eyebrow">{item.caption}</p>
+                <p className="font-label text-[0.68rem] uppercase leading-relaxed tracking-[0.18em] text-eyebrow">{item.caption}</p>
                 <h3 className="mt-1 font-display text-xl font-normal">{item.name}</h3>
               </div>
             </article>
           ))}
         </div>
 
-        <div className="mt-6 flex justify-center gap-2">
-          {topSellers.map((item, index) => (
-            <button
-              key={item.id}
-              type="button"
-              aria-label={`Show ${item.caption ?? item.name}`}
-              aria-current={index === active ? 'true' : undefined}
-              onClick={() => goTo(index)}
-              className={`h-1 rounded-full transition-[width,background-color] duration-300 ${index === active ? 'w-7 bg-fg' : 'w-2 bg-fg/25'}`}
-            />
-          ))}
-        </div>
+        {stops > 1 ? (
+          <div className="mt-6 flex justify-center gap-2">
+            {Array.from({ length: stops }, (_, index) => (
+              <button
+                key={index}
+                type="button"
+                aria-label={`Show ${topSellers[index]?.caption ?? topSellers[index]?.name ?? `group ${index + 1}`}`}
+                aria-current={index === active ? 'true' : undefined}
+                onClick={() => scrollToIndex(index)}
+                className={`h-1 rounded-full transition-[width,background-color] duration-300 ${index === active ? 'w-7 bg-fg' : 'w-2 bg-fg/25'}`}
+              />
+            ))}
+          </div>
+        ) : null}
       </div>
     </section>
   )

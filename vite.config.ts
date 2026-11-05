@@ -2,7 +2,7 @@ import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { site } from './src/config/site'
-import { heroItems } from './src/data/catalog'
+import { heroSlides } from './src/data/heroSlides'
 
 function siteMeta(): Plugin {
   return {
@@ -10,8 +10,8 @@ function siteMeta(): Plugin {
     transformIndexHtml(html) {
       let image = ''
       try {
-        const source = heroItems[0]?.sources.at(-1)
-        if (source?.jpeg) image = new URL(source.jpeg, site.url).toString()
+        const source = heroSlides[0]?.src
+        if (source) image = new URL(source, site.url).toString()
       } catch {
         image = ''
       }

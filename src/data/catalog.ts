@@ -24,7 +24,7 @@ export interface GeneratedPhoto {
 /**
  * Hand-editable catalogue. Match `id` to the photograph filename (without extension).
  * Leave `price` unset to show "Enquire for price". Set `salePrice` below `price` to show a sale badge.
- * `featured` pieces are used in the hero and the About photograph, and are left out of the lookbook.
+ * `featured` pieces are used for the About photograph and are left out of the lookbook.
  */
 export interface PieceDraft {
   id: string
