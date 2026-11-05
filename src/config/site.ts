@@ -42,6 +42,11 @@ export const site = {
       'This catalogue is a first look. Names and prices can be filled in as they are decided. Until then, enquire about anything that stays with you.',
     ],
   },
+  topPieces: {
+    eyebrow: 'Top pieces',
+    title: 'The fish',
+    intro: 'A silver fish, kept close and given often.',
+  },
   collections: {
     eyebrow: 'Collections',
     title: 'The edit',

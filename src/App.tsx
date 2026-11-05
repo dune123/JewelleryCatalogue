@@ -9,6 +9,7 @@ import { Collections } from './sections/Collections'
 import { Contact } from './sections/Contact'
 import { Footer } from './sections/Footer'
 import { Hero } from './sections/Hero'
+import { TopPieces } from './sections/TopPieces'
 import { Lookbook } from './sections/Lookbook'
 import { CartProvider } from './hooks/useCart'
 
@@ -50,6 +51,7 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
+        <TopPieces onOpen={(items, index) => setLightbox({ items, index })} />
         <About />
         <Collections onOpen={(items, index) => setLightbox({ items, index })} />
         <Lookbook onOpen={(items, index) => setLightbox({ items, index })} />

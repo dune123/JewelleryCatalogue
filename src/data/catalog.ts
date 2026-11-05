@@ -33,6 +33,9 @@ export interface PieceDraft {
   salePrice?: number
   description?: string
   featured?: boolean
+  /** Shown in the small slider under the hero. */
+  topSeller?: boolean
+  caption?: string
   photoStyle?: PhotoStyle
 }
 
@@ -115,17 +118,17 @@ export const pieces: PieceDraft[] = [
   { id: 'IMG_0708', name: 'Piece 76', photoStyle: 'creative' },
   { id: 'IMG_0709', name: 'Piece 77', photoStyle: 'creative' },
   { id: 'IMG_0710', name: 'Piece 78', photoStyle: 'creative' },
-  { id: 'IMG_0711', name: 'Piece 79', photoStyle: 'creative' },
+  { id: 'IMG_0711', name: 'Piece 79', photoStyle: 'creative', topSeller: true, caption: 'Fish artefacts' },
   { id: 'IMG_0712', name: 'Piece 80', photoStyle: 'creative' },
   { id: 'IMG_0713', name: 'Piece 81', photoStyle: 'creative' },
   { id: 'IMG_0714', name: 'Piece 82', photoStyle: 'creative' },
   { id: 'IMG_0715', name: 'Piece 83', photoStyle: 'creative' },
   { id: 'IMG_0716', name: 'Piece 84', photoStyle: 'creative' },
-  { id: 'IMG_0717', name: 'Piece 85', photoStyle: 'creative' },
-  { id: 'IMG_0718', name: 'Piece 86', photoStyle: 'creative' },
+  { id: 'IMG_0717', name: 'Piece 85', photoStyle: 'creative', topSeller: true, caption: 'Fish, tortoise, elephant and key' },
+  { id: 'IMG_0718', name: 'Piece 86', photoStyle: 'creative', topSeller: true, caption: 'Fish set' },
   { id: 'IMG_0719', name: 'Piece 87', photoStyle: 'creative' },
   { id: 'IMG_0720', name: 'Piece 88', photoStyle: 'creative' },
-  { id: 'IMG_0721', name: 'Piece 89', photoStyle: 'creative' },
+  { id: 'IMG_0721', name: 'Piece 89', photoStyle: 'creative', topSeller: true, caption: 'Silver fish' },
   { id: 'IMG_0724', name: 'Piece 90', photoStyle: 'creative' },
   { id: 'IMG_0725', name: 'Piece 91', photoStyle: 'creative' },
   { id: 'IMG_0726', name: 'Piece 92', photoStyle: 'creative' },
@@ -189,6 +192,8 @@ export interface CatalogItem {
   salePrice?: number
   description?: string
   featured: boolean
+  topSeller: boolean
+  caption?: string
   photoStyle: PhotoStyle
   alt: string
   width: number
@@ -218,6 +223,8 @@ export const catalog: CatalogItem[] = photos.filter((photo) => !omittedPhotoIds.
     salePrice: onSale ? salePrice : undefined,
     description: draft?.description?.trim() || undefined,
     featured: Boolean(draft?.featured),
+    topSeller: Boolean(draft?.topSeller),
+    caption: draft?.caption?.trim() || undefined,
     photoStyle: draft?.photoStyle ?? 'creative',
     alt: `${name} — ${site.name}`,
     width: photo.width,
@@ -229,6 +236,12 @@ export const catalog: CatalogItem[] = photos.filter((photo) => !omittedPhotoIds.
     onSale,
   }
 })
+
+const topSellerOrder = ['IMG_0721', 'IMG_0717', 'IMG_0718', 'IMG_0711']
+
+export const topSellers = topSellerOrder
+  .map((id) => catalog.find((item) => item.id === id && item.topSeller))
+  .filter((item): item is CatalogItem => Boolean(item))
 
 export const featuredItems = catalog.filter((item) => item.featured)
 export const heroItems = featuredItems.length > 0 ? featuredItems : catalog.slice(0, 4)
