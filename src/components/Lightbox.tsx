@@ -2,6 +2,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import type { CatalogItem } from '../data/catalog'
 import { EnquireButton } from './EnquireButton'
+import { SaveButton } from './SaveButton'
 import { Price } from './Price'
 
 export type LightboxState = {
@@ -179,7 +180,10 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
             <Price item={item} inverse />
           </div>
         </div>
-        <EnquireButton name={item.name} inverse />
+        <div className="flex w-full flex-col gap-2 sm:w-auto">
+          <EnquireButton name={item.name} inverse />
+          <SaveButton item={item} inverse />
+        </div>
       </div>
       <p className="sr-only">Use the left and right arrow keys to move between photographs. Press escape to close.</p>
     </div>

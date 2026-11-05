@@ -1,6 +1,6 @@
 # Prince Jewellery
 
-A single-page catalogue for Prince Jewellery. There is no cart or checkout. Each piece has an Enquire button that opens WhatsApp, or email if no WhatsApp number is set.
+A single-page catalogue for Prince Jewellery. There is no checkout. Each piece can be saved in this browser and enquired about by WhatsApp, or by email if no WhatsApp number is set.
 
 ## Develop
 
@@ -27,6 +27,10 @@ On this machine `sharp` cannot decode the iPhone HEIC files (HEVC is not built i
 Commit `public/images/gallery` and `src/data/photos.generated.json` before deploying. The original photographs are not on the server.
 
 `npm run images -- --sheet` writes labelled contact sheets to `tmp/sheets` so you can review a batch. That folder is gitignored.
+
+## Saved pieces
+
+Save on a card, in the lookbook, or in the lightbox. The header bookmark opens the selection. Each saved piece stores its number, name, and image path in that browser’s local storage under the key `prince-cart`. Nothing is sent to a server. Clearing the browser’s site data removes the list.
 
 ## Edit names, prices, and categories
 

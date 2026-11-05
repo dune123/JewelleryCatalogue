@@ -1,5 +1,6 @@
 import { lazy, Suspense, useCallback, useState } from 'react'
 import { site } from './config/site'
+import { CartDrawer } from './components/CartDrawer'
 import { Header } from './components/Header'
 import { ScrollProgress } from './components/ScrollProgress'
 import type { LightboxState } from './components/Lightbox'
@@ -9,6 +10,7 @@ import { Contact } from './sections/Contact'
 import { Footer } from './sections/Footer'
 import { Hero } from './sections/Hero'
 import { Lookbook } from './sections/Lookbook'
+import { CartProvider } from './hooks/useCart'
 
 const Lightbox = lazy(() => import('./components/Lightbox').then((module) => ({ default: module.Lightbox })))
 
@@ -36,7 +38,7 @@ export default function App() {
   }, [])
 
   return (
-    <>
+    <CartProvider>
       <JsonLd />
       <a
         href="#main"
@@ -54,6 +56,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <CartDrawer />
       {lightbox ? (
         <Suspense fallback={null}>
           <Lightbox
@@ -64,6 +67,6 @@ export default function App() {
           />
         </Suspense>
       ) : null}
-    </>
+    </CartProvider>
   )
 }

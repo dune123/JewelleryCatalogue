@@ -1,6 +1,7 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
 import { EnquireButton } from '../components/EnquireButton'
+import { SaveButton } from '../components/SaveButton'
 import { PhotoImage } from '../components/PhotoImage'
 import { Price } from '../components/Price'
 import { SectionHeading } from '../components/SectionHeading'
@@ -99,7 +100,10 @@ export function Collections({ onOpen }: CollectionsProps) {
                   <div className="mt-2">
                     <Price item={item} />
                   </div>
-                  <EnquireButton name={item.name} className="mt-4 w-full" />
+                  <div className="mt-4 grid grid-cols-1 gap-2">
+                    <EnquireButton name={item.name} />
+                    <SaveButton item={item} />
+                  </div>
                 </motion.article>
               ))}
             </AnimatePresence>

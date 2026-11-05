@@ -1,8 +1,9 @@
-import { Menu, X } from 'lucide-react'
+import { Bookmark, Menu, X } from 'lucide-react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import { Logo } from '../assets/logo/Logo'
 import { site } from '../config/site'
+import { useCart } from '../hooks/useCart'
 import { ThemeToggle } from './ThemeToggle'
 
 const links = [
@@ -18,6 +19,7 @@ export function Header() {
   const menuRef = useRef<HTMLDivElement>(null)
   const reduce = useReducedMotion()
   const solid = scrolled || open
+  const { count, openCart } = useCart()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -93,6 +95,22 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              setOpen(false)
+              openCart()
+            }}
+            aria-label={count === 0 ? 'Saved pieces' : `Saved pieces, ${count}`}
+            className={`relative inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)] ${solid ? '' : 'on-photo'}`}
+          >
+            <Bookmark className="h-[1.15rem] w-[1.15rem]" strokeWidth={1.25} fill={count > 0 ? 'currentColor' : 'none'} />
+            {count > 0 ? (
+              <span className="absolute -right-1 -top-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-fg px-1 font-price text-sm leading-none text-bg">
+                {count}
+              </span>
+            ) : null}
+          </button>
           <ThemeToggle />
           <button
             type="button"

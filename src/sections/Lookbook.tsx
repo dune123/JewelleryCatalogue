@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
 import { BrandPattern } from '../components/BrandPattern'
+import { SaveButton } from '../components/SaveButton'
 import { PhotoImage } from '../components/PhotoImage'
 import { SectionHeading } from '../components/SectionHeading'
 import { site } from '../config/site'
@@ -26,11 +27,11 @@ export function Lookbook({ onOpen }: LookbookProps) {
         <SectionHeading eyebrow={site.lookbook.eyebrow} title={site.lookbook.title} intro={site.lookbook.intro} />
         <div className="mt-12 columns-2 gap-3 md:columns-3 md:gap-4 xl:columns-4">
           {visible.map((item, index) => (
+            <div key={item.id} className="relative mb-3 break-inside-avoid md:mb-4">
             <motion.button
-              key={item.id}
               type="button"
               onClick={() => onOpen(lookbookItems, lookbookItems.findIndex((entry) => entry.id === item.id))}
-              className="group mb-3 block w-full break-inside-avoid text-left md:mb-4"
+              className="group block w-full text-left"
               aria-label={`View ${item.name}`}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -42,6 +43,8 @@ export function Lookbook({ onOpen }: LookbookProps) {
               </span>
               <span className="mt-3 block font-display text-lg">{item.name}</span>
             </motion.button>
+            <SaveButton item={item} className="mt-3 w-full" />
+            </div>
           ))}
         </div>
         {count < lookbookItems.length ? (
