@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.local
+.env
+.env.*
+.vercel
+.netlify
+tmp
+
+# Original photographs stay on this machine. Generated web images live in public/images.
+jewelleryPhotos
