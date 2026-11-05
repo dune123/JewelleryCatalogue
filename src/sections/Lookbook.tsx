@@ -28,6 +28,7 @@ export function Lookbook({ onOpen }: LookbookProps) {
         <div className="mt-12 columns-2 gap-3 md:columns-3 md:gap-4 xl:columns-4">
           {visible.map((item, index) => (
             <div key={item.id} className="relative mb-3 break-inside-avoid md:mb-4">
+            <SaveButton item={item} floating className="absolute right-3 top-3 z-10" />
             <motion.button
               type="button"
               onClick={() => onOpen(lookbookItems, lookbookItems.findIndex((entry) => entry.id === item.id))}
@@ -43,7 +44,6 @@ export function Lookbook({ onOpen }: LookbookProps) {
               </span>
               <span className="mt-3 block font-display text-lg">{item.name}</span>
             </motion.button>
-            <SaveButton item={item} className="mt-3 w-full" />
             </div>
           ))}
         </div>

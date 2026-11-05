@@ -24,9 +24,19 @@ export function Collections({ onOpen }: CollectionsProps) {
       <div className="shell">
         <SectionHeading eyebrow={site.collections.eyebrow} title={site.collections.title} intro={site.collections.intro} />
 
-        <p className="mt-10 font-label text-[0.68rem] uppercase tracking-[0.18em] text-muted" aria-live="polite">
-          {catalog.length === 0 ? 'Nothing in this edit yet' : `${Math.min(count, catalog.length)} of ${catalog.length}`}
-        </p>
+        <div className="mt-10">
+          <p className="font-label text-[0.68rem] uppercase tracking-[0.18em] text-muted" aria-live="polite">
+            {catalog.length === 0 ? 'Nothing in this edit yet' : `${Math.min(count, catalog.length)} of ${catalog.length}`}
+          </p>
+          {catalog.length > 0 ? (
+            <div className="mt-3 h-px w-full max-w-xs bg-fg/10" aria-hidden="true">
+              <div
+                className="h-px transition-[width] duration-500"
+                style={{ width: `${(Math.min(count, catalog.length) / catalog.length) * 100}%`, backgroundImage: 'var(--gradient-gold)' }}
+              />
+            </div>
+          ) : null}
+        </div>
 
         {visible.length === 0 ? (
           <p className="mt-16 max-w-md text-muted">
@@ -48,29 +58,29 @@ export function Collections({ onOpen }: CollectionsProps) {
                   transition={{ duration: reduce ? 0.15 : 0.45, ease: [0.22, 1, 0.36, 1] }}
                   className="group flex flex-col"
                 >
-                  <button
-                    type="button"
-                    onClick={() => onOpen(catalog, catalog.findIndex((entry) => entry.id === item.id))}
-                    className="block text-left"
-                    aria-label={`View ${item.name}`}
-                  >
-                    <div className="card-media relative overflow-hidden rounded-[24px] shadow-[var(--shadow)]">
-                      <PhotoImage item={item} />
-                      {item.onSale ? (
-                        <span className="absolute left-3 top-3 bg-bronzed px-2.5 py-1 font-price text-sm uppercase tracking-[0.14em] text-ivory">
-                          Sale
-                        </span>
-                      ) : null}
-                    </div>
-                    <h3 className="mt-4 font-display text-[clamp(1.05rem,1.4vw,1.35rem)] font-normal leading-tight">{item.name}</h3>
-                  </button>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => onOpen(catalog, catalog.findIndex((entry) => entry.id === item.id))}
+                      className="block w-full text-left"
+                      aria-label={`View ${item.name}`}
+                    >
+                      <div className="card-media relative overflow-hidden rounded-[24px] shadow-[var(--shadow)]">
+                        <PhotoImage item={item} />
+                        {item.onSale ? (
+                          <span className="absolute left-3 top-3 bg-bronzed px-2.5 py-1 font-price text-sm uppercase tracking-[0.14em] text-ivory">
+                            Sale
+                          </span>
+                        ) : null}
+                      </div>
+                      <h3 className="mt-4 font-display text-[clamp(1.05rem,1.4vw,1.35rem)] font-normal leading-tight">{item.name}</h3>
+                    </button>
+                    <SaveButton item={item} floating className="absolute right-3 top-3 z-10" />
+                  </div>
                   <div className="mt-2">
                     <Price item={item} />
                   </div>
-                  <div className="mt-4 grid grid-cols-1 gap-2">
-                    <EnquireButton name={item.name} />
-                    <SaveButton item={item} />
-                  </div>
+                  <EnquireButton name={item.name} className="mt-4 w-full" />
                 </motion.article>
               ))}
             </AnimatePresence>

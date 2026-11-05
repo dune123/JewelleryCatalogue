@@ -15,6 +15,21 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
   const scroller = useRef<HTMLDivElement>(null)
   const paused = useRef(false)
   const [canScroll, setCanScroll] = useState(false)
+  const [active, setActive] = useState(0)
+
+  function readIndex(el: HTMLDivElement) {
+    const card = el.querySelector('article')
+    const amount = (card?.getBoundingClientRect().width ?? el.clientWidth) + 16
+    return Math.max(0, Math.min(topSellers.length - 1, Math.round(el.scrollLeft / amount)))
+  }
+
+  function goTo(index: number) {
+    const el = scroller.current
+    const card = el?.querySelector('article')
+    if (!el || !card) return
+    const amount = card.getBoundingClientRect().width + 16
+    el.scrollTo({ left: amount * index, behavior: reduce ? 'auto' : 'smooth' })
+  }
 
   function step(direction: 1 | -1) {
     const el = scroller.current
@@ -54,7 +69,8 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
         <div className="flex items-end justify-between gap-6">
           <div className="max-w-xl">
             <p className="font-label text-[0.7rem] font-medium uppercase tracking-[0.34em] text-eyebrow">{site.topPieces.eyebrow}</p>
-            <h2 className="mt-3 font-display text-[clamp(1.7rem,3vw,2.4rem)] font-normal leading-tight">{site.topPieces.title}</h2>
+            <span className="mt-4 block h-px w-12" style={{ backgroundImage: 'var(--gradient-gold)' }} />
+            <h2 className="mt-4 font-display text-[clamp(1.7rem,3vw,2.4rem)] font-normal leading-tight">{site.topPieces.title}</h2>
             <p className="mt-3 text-sm text-muted">{site.topPieces.intro}</p>
           </div>
           {canScroll ? (
@@ -63,7 +79,7 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
                 type="button"
                 onClick={() => step(-1)}
                 aria-label="Previous top piece"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)]"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)] transition-colors duration-300 hover:bg-fg/5"
               >
                 <ChevronLeft className="h-5 w-5" strokeWidth={1.25} />
               </button>
@@ -71,7 +87,7 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
                 type="button"
                 onClick={() => step(1)}
                 aria-label="Next top piece"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)]"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full shadow-[inset_0_0_0_1px_var(--line)] transition-colors duration-300 hover:bg-fg/5"
               >
                 <ChevronRight className="h-5 w-5" strokeWidth={1.25} />
               </button>
@@ -93,28 +109,42 @@ export function TopPieces({ onOpen }: TopPiecesProps) {
           onBlurCapture={(event) => {
             if (!event.currentTarget.contains(event.relatedTarget)) paused.current = false
           }}
-          className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          onScroll={(event) => setActive(readIndex(event.currentTarget))}
+          className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {topSellers.map((item, index) => (
-            <article key={item.id} className="w-[78%] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)]">
-              <button
-                type="button"
-                onClick={() => onOpen(topSellers, index)}
-                className="block w-full text-left"
-                aria-label={`View ${item.caption ?? item.name}`}
-              >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-[var(--shadow)]">
-                  <PhotoImage item={item} fill sizes="(min-width: 768px) 30vw, 78vw" />
-                </div>
-              </button>
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <div className="min-w-0">
-                  <p className="truncate font-label text-[0.68rem] uppercase tracking-[0.18em] text-eyebrow">{item.caption}</p>
-                  <h3 className="mt-1 font-display text-xl font-normal">{item.name}</h3>
-                </div>
-                <SaveButton item={item} className="shrink-0 px-4" />
+            <article key={item.id} className="group w-[78%] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)]">
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => onOpen(topSellers, index)}
+                  className="block w-full text-left"
+                  aria-label={`View ${item.caption ?? item.name}`}
+                >
+                  <div className="card-media relative aspect-[4/3] overflow-hidden rounded-[24px] shadow-[var(--shadow)]">
+                    <PhotoImage item={item} fill sizes="(min-width: 768px) 30vw, 78vw" />
+                  </div>
+                </button>
+                <SaveButton item={item} floating className="absolute right-3 top-3 z-10" />
+              </div>
+              <div className="mt-4">
+                <p className="font-label text-[0.68rem] uppercase tracking-[0.18em] text-eyebrow">{item.caption}</p>
+                <h3 className="mt-1 font-display text-xl font-normal">{item.name}</h3>
               </div>
             </article>
+          ))}
+        </div>
+
+        <div className="mt-6 flex justify-center gap-2">
+          {topSellers.map((item, index) => (
+            <button
+              key={item.id}
+              type="button"
+              aria-label={`Show ${item.caption ?? item.name}`}
+              aria-current={index === active ? 'true' : undefined}
+              onClick={() => goTo(index)}
+              className={`h-1 rounded-full transition-[width,background-color] duration-300 ${index === active ? 'w-7 bg-fg' : 'w-2 bg-fg/25'}`}
+            />
           ))}
         </div>
       </div>
