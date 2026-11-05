@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-05T16:46:25.799Z",
+  "generatedAt": "2026-11-05T18:02:59.556Z",
   "decoder": "sips",
-  "count": 104,
+  "count": 136,
   "photos": [
     {
       "id": "IMG_0613",
@@ -3538,6 +3538,1094 @@
       },
       "sourceSize": 1981784,
       "sourceMtimeMs": 1793897040314
+    },
+    {
+      "id": "IMG_0724",
+      "filename": "IMG_0724.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoPABQAPzmGulOvKKWisAgB4CcJYwC7ABj2TcwmBcc3AuFAAP4ng0jsI8dfUzThyVckN2s/kT9eTNjFludakzulwD72NLG1fygpWqJi7soMHQsSsD6BQbcY4UbdDYgA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0724-480.webp",
+          "jpeg": "/images/gallery/IMG_0724-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0724-960.webp",
+          "jpeg": "/images/gallery/IMG_0724-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0724-1600.webp",
+          "jpeg": "/images/gallery/IMG_0724-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0724-480.webp 480w, /images/gallery/IMG_0724-960.webp 960w, /images/gallery/IMG_0724-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0724-480.jpg 480w, /images/gallery/IMG_0724-960.jpg 960w, /images/gallery/IMG_0724-1600.jpg 1600w"
+      },
+      "sourceSize": 752532,
+      "sourceMtimeMs": 1793901532965
+    },
+    {
+      "id": "IMG_0725",
+      "filename": "IMG_0725.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoPABQAPzmGuVOvKSWisAgB4CcJZQC7BHMAscczVcW0GcTVCAAA/VIpvle84G4XpIaxEI1YaRbJiOuBiYmJnp8cUPqKx85iyI6Ud59uI7yBg3+3h6xHQkrhWJnVAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0725-480.webp",
+          "jpeg": "/images/gallery/IMG_0725-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0725-960.webp",
+          "jpeg": "/images/gallery/IMG_0725-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0725-1600.webp",
+          "jpeg": "/images/gallery/IMG_0725-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0725-480.webp 480w, /images/gallery/IMG_0725-960.webp 960w, /images/gallery/IMG_0725-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0725-480.jpg 480w, /images/gallery/IMG_0725-960.jpg 960w, /images/gallery/IMG_0725-1600.jpg 1600w"
+      },
+      "sourceSize": 776858,
+      "sourceMtimeMs": 1793901550391
+    },
+    {
+      "id": "IMG_0726",
+      "filename": "IMG_0726.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoPABQAPzmGuVOvKSWisAgB4CcJbACdMoMljCcDvsK9X66AAP4l2+CahL4h96GiA4bXiTJxgFMco7ZKpvwd3Kc+r+QxqCUj+BozD9XuLwnr/BGJnGY4AA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0726-480.webp",
+          "jpeg": "/images/gallery/IMG_0726-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0726-960.webp",
+          "jpeg": "/images/gallery/IMG_0726-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0726-1600.webp",
+          "jpeg": "/images/gallery/IMG_0726-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0726-480.webp 480w, /images/gallery/IMG_0726-960.webp 960w, /images/gallery/IMG_0726-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0726-480.jpg 480w, /images/gallery/IMG_0726-960.jpg 960w, /images/gallery/IMG_0726-1600.jpg 1600w"
+      },
+      "sourceSize": 1647833,
+      "sourceMtimeMs": 1793901528719
+    },
+    {
+      "id": "IMG_0727",
+      "filename": "IMG_0727.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdOUAAzLK5lwXGuZFNdYAAy0nOglnet3Yw98ZMkujrlK1NmdcgGoIUIZQOnrJ0dx8rhbuP9iZ0aLzC3OD5gAA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0727-480.webp",
+          "jpeg": "/images/gallery/IMG_0727-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0727-960.webp",
+          "jpeg": "/images/gallery/IMG_0727-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0727-1600.webp",
+          "jpeg": "/images/gallery/IMG_0727-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0727-480.webp 480w, /images/gallery/IMG_0727-960.webp 960w, /images/gallery/IMG_0727-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0727-480.jpg 480w, /images/gallery/IMG_0727-960.jpg 960w, /images/gallery/IMG_0727-1600.jpg 1600w"
+      },
+      "sourceSize": 1746350,
+      "sourceMtimeMs": 1793901536316
+    },
+    {
+      "id": "IMG_0728",
+      "filename": "IMG_0728.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoPABQAPzmGulQvKSWjMAgB4CcJbACdLwAB0Vl9S56yqOsU4AD+EK3TTygOpUghCp2nkJm/MMSoLlr+B72Lm6nplWCZqjz3u+Jx8F6xz9O+pAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0728-480.webp",
+          "jpeg": "/images/gallery/IMG_0728-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0728-960.webp",
+          "jpeg": "/images/gallery/IMG_0728-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0728-1600.webp",
+          "jpeg": "/images/gallery/IMG_0728-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0728-480.webp 480w, /images/gallery/IMG_0728-960.webp 960w, /images/gallery/IMG_0728-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0728-480.jpg 480w, /images/gallery/IMG_0728-960.jpg 960w, /images/gallery/IMG_0728-1600.jpg 1600w"
+      },
+      "sourceSize": 2643099,
+      "sourceMtimeMs": 1793901530834
+    },
+    {
+      "id": "IMG_0729",
+      "filename": "IMG_0729.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdMoMYAE53lNY2EeSwtxyAAP7MUpW1ZWmfGBcSj+hnRDcn/hfYtN4dw7rxC6u6hJYaU09AcpsYF8R+tlIUe8EWE8wAAAA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0729-480.webp",
+          "jpeg": "/images/gallery/IMG_0729-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0729-960.webp",
+          "jpeg": "/images/gallery/IMG_0729-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0729-1600.webp",
+          "jpeg": "/images/gallery/IMG_0729-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0729-480.webp 480w, /images/gallery/IMG_0729-960.webp 960w, /images/gallery/IMG_0729-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0729-480.jpg 480w, /images/gallery/IMG_0729-960.jpg 960w, /images/gallery/IMG_0729-1600.jpg 1600w"
+      },
+      "sourceSize": 1741451,
+      "sourceMtimeMs": 1793901521165
+    },
+    {
+      "id": "IMG_0730",
+      "filename": "IMG_0730.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoPABQAPzmGuVOvKSWisAgB4CcJZACsABcHDTGKEuCaAAD+APRj5h1pl/WtYaJkMTQddUxXQlifQtbjsjHrpVhL6fR5wLA80aBBZIP6lnnxEOQuAELuJC1jUbR36gVwRcAAAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0730-480.webp",
+          "jpeg": "/images/gallery/IMG_0730-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0730-960.webp",
+          "jpeg": "/images/gallery/IMG_0730-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0730-1600.webp",
+          "jpeg": "/images/gallery/IMG_0730-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0730-480.webp 480w, /images/gallery/IMG_0730-960.webp 960w, /images/gallery/IMG_0730-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0730-480.jpg 480w, /images/gallery/IMG_0730-960.jpg 960w, /images/gallery/IMG_0730-1600.jpg 1600w"
+      },
+      "sourceSize": 2303383,
+      "sourceMtimeMs": 1793901548373
+    },
+    {
+      "id": "IMG_0731",
+      "filename": "IMG_0731.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdOUE6UArLFV4StXwtAAD+ca3hNelbd7ypVUnK9Eo7cHUn/6bHo1JVbHv2/9ypWemUJV7QZs5PuLhfPLW+lkkiAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0731-480.webp",
+          "jpeg": "/images/gallery/IMG_0731-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0731-960.webp",
+          "jpeg": "/images/gallery/IMG_0731-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0731-1600.webp",
+          "jpeg": "/images/gallery/IMG_0731-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0731-480.webp 480w, /images/gallery/IMG_0731-960.webp 960w, /images/gallery/IMG_0731-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0731-480.jpg 480w, /images/gallery/IMG_0731-960.jpg 960w, /images/gallery/IMG_0731-1600.jpg 1600w"
+      },
+      "sourceSize": 1841254,
+      "sourceMtimeMs": 1793901523315
+    },
+    {
+      "id": "IMG_0732",
+      "filename": "IMG_0732.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAwCdASoPABQAPzmGulOvKSWisAgB4CcJYwAANSarDnOUrwAA/Zp8K8kiceUBrLTBkOc6NmRNeAjc/gwMwpAoYOg3e8kPVl0WsIrreypzidv8xO+SAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0732-480.webp",
+          "jpeg": "/images/gallery/IMG_0732-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0732-960.webp",
+          "jpeg": "/images/gallery/IMG_0732-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0732-1600.webp",
+          "jpeg": "/images/gallery/IMG_0732-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0732-480.webp 480w, /images/gallery/IMG_0732-960.webp 960w, /images/gallery/IMG_0732-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0732-480.jpg 480w, /images/gallery/IMG_0732-960.jpg 960w, /images/gallery/IMG_0732-1600.jpg 1600w"
+      },
+      "sourceSize": 1592281,
+      "sourceMtimeMs": 1793901514151
+    },
+    {
+      "id": "IMG_0733",
+      "filename": "IMG_0733.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoPABQAPzmEuVOvKKWisAgB4CcJZwAAUX3PLZ74Ble5wAD+6PEaGqxXSUoNXIQozOMd19M+9Ji+ojiWS8MavJkaVtuESGzi83AAAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0733-480.webp",
+          "jpeg": "/images/gallery/IMG_0733-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0733-960.webp",
+          "jpeg": "/images/gallery/IMG_0733-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0733-1600.webp",
+          "jpeg": "/images/gallery/IMG_0733-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0733-480.webp 480w, /images/gallery/IMG_0733-960.webp 960w, /images/gallery/IMG_0733-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0733-480.jpg 480w, /images/gallery/IMG_0733-960.jpg 960w, /images/gallery/IMG_0733-1600.jpg 1600w"
+      },
+      "sourceSize": 1879311,
+      "sourceMtimeMs": 1793901538375
+    },
+    {
+      "id": "IMG_0734",
+      "filename": "IMG_0734.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBACdASoPABQAPzmGulQvKSWjMAgB4CcJbACdMoADTtGvehBHJw96tYAA/nc0tSTTw+/ULC6lE11x08W/347H82qRz5FBNffhe5hwn1dJY3WiF+7yc8u4yartXkQA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0734-480.webp",
+          "jpeg": "/images/gallery/IMG_0734-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0734-960.webp",
+          "jpeg": "/images/gallery/IMG_0734-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0734-1600.webp",
+          "jpeg": "/images/gallery/IMG_0734-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0734-480.webp 480w, /images/gallery/IMG_0734-960.webp 960w, /images/gallery/IMG_0734-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0734-480.jpg 480w, /images/gallery/IMG_0734-960.jpg 960w, /images/gallery/IMG_0734-1600.jpg 1600w"
+      },
+      "sourceSize": 1840959,
+      "sourceMtimeMs": 1793901512083
+    },
+    {
+      "id": "IMG_0735",
+      "filename": "IMG_0735.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoPABQAPzmEuVOvKKWisAgB4CcJZgDBFUAAeHk5ulPomqc0AAD+qZz5hmW1fdYv760WidnNM4sgsNqWBnoe763Akvbzr46J0kv5R1MPXBrkS5KKF99PRxMxXzTPcdAAAAA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0735-480.webp",
+          "jpeg": "/images/gallery/IMG_0735-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0735-960.webp",
+          "jpeg": "/images/gallery/IMG_0735-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0735-1600.webp",
+          "jpeg": "/images/gallery/IMG_0735-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0735-480.webp 480w, /images/gallery/IMG_0735-960.webp 960w, /images/gallery/IMG_0735-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0735-480.jpg 480w, /images/gallery/IMG_0735-960.jpg 960w, /images/gallery/IMG_0735-1600.jpg 1600w"
+      },
+      "sourceSize": 1894099,
+      "sourceMtimeMs": 1793901518885
+    },
+    {
+      "id": "IMG_0736",
+      "filename": "IMG_0736.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAwCdASoPABQAPzmGuVOvKSWisAgB4CcJQAALilAI+X8eAADylozIHOlTCctn1qR5tNqxke8Hz55uyOXDEprXV2dDe+aLLT5y1rq2v3AsrBlw5cyMpYtxS+vg45bVh4qsoAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0736-480.webp",
+          "jpeg": "/images/gallery/IMG_0736-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0736-960.webp",
+          "jpeg": "/images/gallery/IMG_0736-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0736-1600.webp",
+          "jpeg": "/images/gallery/IMG_0736-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0736-480.webp 480w, /images/gallery/IMG_0736-960.webp 960w, /images/gallery/IMG_0736-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0736-480.jpg 480w, /images/gallery/IMG_0736-960.jpg 960w, /images/gallery/IMG_0736-1600.jpg 1600w"
+      },
+      "sourceSize": 2056632,
+      "sourceMtimeMs": 1793901516083
+    },
+    {
+      "id": "IMG_0737",
+      "filename": "IMG_0737.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoPABQAPzmGuVOvKSWisAgB4CcJZQAAYXcIN2OYciH5RoEGAAD+qVEDEwaugbKE3fy/02Xd48Rxd6qVfsxFt/4Py3pwdnDcM1mNCFPWYAHAAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0737-480.webp",
+          "jpeg": "/images/gallery/IMG_0737-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0737-960.webp",
+          "jpeg": "/images/gallery/IMG_0737-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0737-1600.webp",
+          "jpeg": "/images/gallery/IMG_0737-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0737-480.webp 480w, /images/gallery/IMG_0737-960.webp 960w, /images/gallery/IMG_0737-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0737-480.jpg 480w, /images/gallery/IMG_0737-960.jpg 960w, /images/gallery/IMG_0737-1600.jpg 1600w"
+      },
+      "sourceSize": 2096367,
+      "sourceMtimeMs": 1793901499534
+    },
+    {
+      "id": "IMG_0738",
+      "filename": "IMG_0738.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACQAwCdASoPABQAPzmGuVOvKSWisAgB4CcJYwDE2CBgiT4v2HIAAP14dQZS638ETTnQyH1gsZJqoRNGn5xVoUthN/Rh53MmFA+i/mP4y9ew+tihdYZ7nE4SG9Zx3S23Fweb+mYAAAA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0738-480.webp",
+          "jpeg": "/images/gallery/IMG_0738-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0738-960.webp",
+          "jpeg": "/images/gallery/IMG_0738-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0738-1600.webp",
+          "jpeg": "/images/gallery/IMG_0738-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0738-480.webp 480w, /images/gallery/IMG_0738-960.webp 960w, /images/gallery/IMG_0738-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0738-480.jpg 480w, /images/gallery/IMG_0738-960.jpg 960w, /images/gallery/IMG_0738-1600.jpg 1600w"
+      },
+      "sourceSize": 1645813,
+      "sourceMtimeMs": 1793901504114
+    },
+    {
+      "id": "IMG_0739",
+      "filename": "IMG_0739.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoPABQAPzmGuVOvKSWisAgB4CcJZQC7AB0mcNuOFisHmAAA+kuCdqfEil6O7hcgziSk5O+8dofD2jz+8gYd0ReUfN4knSfuPxwrUqylqxO4nENSrrYC1bEdHSHtqDk6YQAAAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0739-480.webp",
+          "jpeg": "/images/gallery/IMG_0739-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0739-960.webp",
+          "jpeg": "/images/gallery/IMG_0739-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0739-1600.webp",
+          "jpeg": "/images/gallery/IMG_0739-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0739-480.webp 480w, /images/gallery/IMG_0739-960.webp 960w, /images/gallery/IMG_0739-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0739-480.jpg 480w, /images/gallery/IMG_0739-960.jpg 960w, /images/gallery/IMG_0739-1600.jpg 1600w"
+      },
+      "sourceSize": 1774294,
+      "sourceMtimeMs": 1793901497400
+    },
+    {
+      "id": "IMG_0740",
+      "filename": "IMG_0740.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoPABQAPzmGuVOvKSWisAgB4CcJZQAAW+zn5Y52q7jtawAA/sG32Uv55WoLMpjF5wZmH0Jv6IkC0lcyC9tjJFkQUQ8YBuvABluacf8Kq1LYoAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0740-480.webp",
+          "jpeg": "/images/gallery/IMG_0740-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0740-960.webp",
+          "jpeg": "/images/gallery/IMG_0740-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0740-1600.webp",
+          "jpeg": "/images/gallery/IMG_0740-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0740-480.webp 480w, /images/gallery/IMG_0740-960.webp 960w, /images/gallery/IMG_0740-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0740-480.jpg 480w, /images/gallery/IMG_0740-960.jpg 960w, /images/gallery/IMG_0740-1600.jpg 1600w"
+      },
+      "sourceSize": 2004458,
+      "sourceMtimeMs": 1793901506452
+    },
+    {
+      "id": "IMG_0741",
+      "filename": "IMG_0741.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoPABQAPzmIuVOvKSWisAgB4CcJbACdMoAC9Ipe/pKauFJgAP6ew8hk06XbUKiePMoz9oM7PJNsRy64jkYkAfGE2FcgWNMs0lu6KQtV7lUhV8cCrlLF51rn+AA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0741-480.webp",
+          "jpeg": "/images/gallery/IMG_0741-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0741-960.webp",
+          "jpeg": "/images/gallery/IMG_0741-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0741-1600.webp",
+          "jpeg": "/images/gallery/IMG_0741-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0741-480.webp 480w, /images/gallery/IMG_0741-960.webp 960w, /images/gallery/IMG_0741-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0741-480.jpg 480w, /images/gallery/IMG_0741-960.jpg 960w, /images/gallery/IMG_0741-1600.jpg 1600w"
+      },
+      "sourceSize": 1874675,
+      "sourceMtimeMs": 1793901485848
+    },
+    {
+      "id": "IMG_0742",
+      "filename": "IMG_0742.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoPABQAPzmEuVOvKKWisAgB4CcJbACdMoR3ACnHQcoYaMs0JcCgAP5vWqI+1Atp2ApJZlSLVo5+RKgEYvfM/B9L5rRdOO3jyTcY7T84YfBC3AJSEQMzb4ks/DJuAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0742-480.webp",
+          "jpeg": "/images/gallery/IMG_0742-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0742-960.webp",
+          "jpeg": "/images/gallery/IMG_0742-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0742-1600.webp",
+          "jpeg": "/images/gallery/IMG_0742-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0742-480.webp 480w, /images/gallery/IMG_0742-960.webp 960w, /images/gallery/IMG_0742-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0742-480.jpg 480w, /images/gallery/IMG_0742-960.jpg 960w, /images/gallery/IMG_0742-1600.jpg 1600w"
+      },
+      "sourceSize": 1918768,
+      "sourceMtimeMs": 1793901495460
+    },
+    {
+      "id": "IMG_0743",
+      "filename": "IMG_0743.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACQBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdOUE4AAwjyze+VAX6c0QpJIAA/p5SP/ccqj1EWiYSIabShcsJahsYI4iSv7m3tDaD3EOWPc7SqG+EgAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0743-480.webp",
+          "jpeg": "/images/gallery/IMG_0743-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0743-960.webp",
+          "jpeg": "/images/gallery/IMG_0743-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0743-1600.webp",
+          "jpeg": "/images/gallery/IMG_0743-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0743-480.webp 480w, /images/gallery/IMG_0743-960.webp 960w, /images/gallery/IMG_0743-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0743-480.jpg 480w, /images/gallery/IMG_0743-960.jpg 960w, /images/gallery/IMG_0743-1600.jpg 1600w"
+      },
+      "sourceSize": 2236064,
+      "sourceMtimeMs": 1793901501547
+    },
+    {
+      "id": "IMG_0744",
+      "filename": "IMG_0744.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASoPABQAPzmIulQvKSWjMAgB4CcJbACdMoMYNcAAxUKp/u6+3ldGqQAA/rwvzaD9xuYJqGVgF0qnN2BXpY3Dl9RrakkGaKo2VDmuSELgSAPBAwqh32cSxvgXX6Swf3idk8Kj46dRd/2kAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0744-480.webp",
+          "jpeg": "/images/gallery/IMG_0744-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0744-960.webp",
+          "jpeg": "/images/gallery/IMG_0744-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0744-1600.webp",
+          "jpeg": "/images/gallery/IMG_0744-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0744-480.webp 480w, /images/gallery/IMG_0744-960.webp 960w, /images/gallery/IMG_0744-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0744-480.jpg 480w, /images/gallery/IMG_0744-960.jpg 960w, /images/gallery/IMG_0744-1600.jpg 1600w"
+      },
+      "sourceSize": 2037620,
+      "sourceMtimeMs": 1793901479610
+    },
+    {
+      "id": "IMG_0745",
+      "filename": "IMG_0745.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoPABQAPzmGuVQvKSWjMAgB4CcJbACw7CHD7q3aBigkgAD+u57MswFG67kARFxwoLEn3Sgn1U/1PBspFxTUpQvDei0jI+XukGHcMh7ZZA5bg3Y1WdzZiR95sxIgAAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0745-480.webp",
+          "jpeg": "/images/gallery/IMG_0745-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0745-960.webp",
+          "jpeg": "/images/gallery/IMG_0745-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0745-1600.webp",
+          "jpeg": "/images/gallery/IMG_0745-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0745-480.webp 480w, /images/gallery/IMG_0745-960.webp 960w, /images/gallery/IMG_0745-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0745-480.jpg 480w, /images/gallery/IMG_0745-960.jpg 960w, /images/gallery/IMG_0745-1600.jpg 1600w"
+      },
+      "sourceSize": 2173436,
+      "sourceMtimeMs": 1793901449449
+    },
+    {
+      "id": "IMG_0746",
+      "filename": "IMG_0746.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAwCdASoPABQAPzmEuVOvKKWisAgB4CcJYwC7ABSaX4+nYWgAoAD+ovrTa/sTqyUufVxk9baPWFDwU5ZGLUeKYhG2GGMvUQFOX71jrBYFuSYC6bsBUDbdiOrqSfguUJQOQAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0746-480.webp",
+          "jpeg": "/images/gallery/IMG_0746-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0746-960.webp",
+          "jpeg": "/images/gallery/IMG_0746-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0746-1600.webp",
+          "jpeg": "/images/gallery/IMG_0746-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0746-480.webp 480w, /images/gallery/IMG_0746-960.webp 960w, /images/gallery/IMG_0746-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0746-480.jpg 480w, /images/gallery/IMG_0746-960.jpg 960w, /images/gallery/IMG_0746-1600.jpg 1600w"
+      },
+      "sourceSize": 1557320,
+      "sourceMtimeMs": 1793901483163
+    },
+    {
+      "id": "IMG_0747",
+      "filename": "IMG_0747.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdMoAC24Uw7P7Q1MWF4wAAyfh/yMWFFKKXaf5dB+oMSI+ChkVm8seBhrOaVLYajgjGdoXBwjZjW5i9vOeQcsPQvgYxvriphY+PV0+AAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0747-480.webp",
+          "jpeg": "/images/gallery/IMG_0747-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0747-960.webp",
+          "jpeg": "/images/gallery/IMG_0747-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0747-1600.webp",
+          "jpeg": "/images/gallery/IMG_0747-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0747-480.webp 480w, /images/gallery/IMG_0747-960.webp 960w, /images/gallery/IMG_0747-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0747-480.jpg 480w, /images/gallery/IMG_0747-960.jpg 960w, /images/gallery/IMG_0747-1600.jpg 1600w"
+      },
+      "sourceSize": 1858671,
+      "sourceMtimeMs": 1793901447149
+    },
+    {
+      "id": "IMG_0748",
+      "filename": "IMG_0748.HEIC",
+      "width": 4032,
+      "height": 3024,
+      "aspectRatio": 1.3333,
+      "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoUAA8APzmEuVOvKKWisAgB4CcJbACw7B6Wb8d4YTlVRgAA/kNlG1eSNqLLJCPFXO+lMdHrpWkQWLBrt/rzptAnN7oJVkE8fR7J1IAs+RH0XcvA+alMnn6ycfAAAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 360,
+          "webp": "/images/gallery/IMG_0748-480.webp",
+          "jpeg": "/images/gallery/IMG_0748-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 720,
+          "webp": "/images/gallery/IMG_0748-960.webp",
+          "jpeg": "/images/gallery/IMG_0748-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 1200,
+          "webp": "/images/gallery/IMG_0748-1600.webp",
+          "jpeg": "/images/gallery/IMG_0748-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0748-480.webp 480w, /images/gallery/IMG_0748-960.webp 960w, /images/gallery/IMG_0748-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0748-480.jpg 480w, /images/gallery/IMG_0748-960.jpg 960w, /images/gallery/IMG_0748-1600.jpg 1600w"
+      },
+      "sourceSize": 2032599,
+      "sourceMtimeMs": 1793901477701
+    },
+    {
+      "id": "IMG_0749",
+      "filename": "IMG_0749.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoPABQAPzmGuVOvKSWisAgB4CcJbACdMoADKSaZ31Ezm1RprFAA/i3XPmjT0O5kKpQNPGWjYQlQ4pMwgTPU/252WC0jl6tXAuAVE65VztzpeBFyTwNn+UoOSXd8AAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0749-480.webp",
+          "jpeg": "/images/gallery/IMG_0749-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0749-960.webp",
+          "jpeg": "/images/gallery/IMG_0749-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0749-1600.webp",
+          "jpeg": "/images/gallery/IMG_0749-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0749-480.webp 480w, /images/gallery/IMG_0749-960.webp 960w, /images/gallery/IMG_0749-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0749-480.jpg 480w, /images/gallery/IMG_0749-960.jpg 960w, /images/gallery/IMG_0749-1600.jpg 1600w"
+      },
+      "sourceSize": 2033078,
+      "sourceMtimeMs": 1793901481300
+    },
+    {
+      "id": "IMG_0750",
+      "filename": "IMG_0750.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoPABQAPzmEuVOvKKWisAgB4CcJbACdMoR4GCfZjOilIHP0mIAA/jM3cxkgcgjjrUsD5vEg9Ce509PMRhx1c4/nWP9dV+6LE9OA3AYfF4NO0otPca0AAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0750-480.webp",
+          "jpeg": "/images/gallery/IMG_0750-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0750-960.webp",
+          "jpeg": "/images/gallery/IMG_0750-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0750-1600.webp",
+          "jpeg": "/images/gallery/IMG_0750-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0750-480.webp 480w, /images/gallery/IMG_0750-960.webp 960w, /images/gallery/IMG_0750-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0750-480.jpg 480w, /images/gallery/IMG_0750-960.jpg 960w, /images/gallery/IMG_0750-1600.jpg 1600w"
+      },
+      "sourceSize": 1879154,
+      "sourceMtimeMs": 1793901440051
+    },
+    {
+      "id": "IMG_0751",
+      "filename": "IMG_0751.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAwCdASoPABQAPzmEuVOvKKWisAgB4CcJbACdMoACQZ+i8plRWHwAAPi1AE5PsW8AF++xVsyVcTFsM3kIlJbLDEq+1qKXq6rdnwh1jj3N0Mu+3g3UIfmLsFI2boiGxAYLl5rcdVTShvlQ4AA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0751-480.webp",
+          "jpeg": "/images/gallery/IMG_0751-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0751-960.webp",
+          "jpeg": "/images/gallery/IMG_0751-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0751-1600.webp",
+          "jpeg": "/images/gallery/IMG_0751-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0751-480.webp 480w, /images/gallery/IMG_0751-960.webp 960w, /images/gallery/IMG_0751-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0751-480.jpg 480w, /images/gallery/IMG_0751-960.jpg 960w, /images/gallery/IMG_0751-1600.jpg 1600w"
+      },
+      "sourceSize": 1755102,
+      "sourceMtimeMs": 1793901444799
+    },
+    {
+      "id": "IMG_0752",
+      "filename": "IMG_0752.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoPABQAPzmGulOvKKWisAgB4CcJYwDE2CLTpes1VZVc3pAc4AD+oXFFLi/BRzUdhvn1XNzW2fOhlt3ajvRHMLiqA1L5haAK4aCpZkIE9eb+c3X8I+qzTPdvC5F14L5HVABBQAAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0752-480.webp",
+          "jpeg": "/images/gallery/IMG_0752-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0752-960.webp",
+          "jpeg": "/images/gallery/IMG_0752-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0752-1600.webp",
+          "jpeg": "/images/gallery/IMG_0752-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0752-480.webp 480w, /images/gallery/IMG_0752-960.webp 960w, /images/gallery/IMG_0752-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0752-480.jpg 480w, /images/gallery/IMG_0752-960.jpg 960w, /images/gallery/IMG_0752-1600.jpg 1600w"
+      },
+      "sourceSize": 1671454,
+      "sourceMtimeMs": 1793901442233
+    },
+    {
+      "id": "IMG_0753",
+      "filename": "IMG_0753.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwBACdASoPABQAPzmEuVOvKKWisAgB4CcJaACdMoACwgmwsunDxpoaVcfdAAD6/aeUElbTXPPoKiLJJL1FWWcgupNMUbJy7ClQB3wIhiiDHK338pzfKtolKgvCmVNsYZpgAA==",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0753-480.webp",
+          "jpeg": "/images/gallery/IMG_0753-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0753-960.webp",
+          "jpeg": "/images/gallery/IMG_0753-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0753-1600.webp",
+          "jpeg": "/images/gallery/IMG_0753-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0753-480.webp 480w, /images/gallery/IMG_0753-960.webp 960w, /images/gallery/IMG_0753-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0753-480.jpg 480w, /images/gallery/IMG_0753-960.jpg 960w, /images/gallery/IMG_0753-1600.jpg 1600w"
+      },
+      "sourceSize": 2290566,
+      "sourceMtimeMs": 1793901430700
+    },
+    {
+      "id": "IMG_0754",
+      "filename": "IMG_0754.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoPABQAPzmGu1OvKSYisAgB4CcJbACdMoADTMseQ2j8k1yQAP7NOlRC0yXxWvL1Dl6XKNsqP2FwLHPpkYmYT4Lw8CgiVDseVD/FAWvxap+qnZx/XUUxWegQAAA=",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0754-480.webp",
+          "jpeg": "/images/gallery/IMG_0754-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0754-960.webp",
+          "jpeg": "/images/gallery/IMG_0754-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0754-1600.webp",
+          "jpeg": "/images/gallery/IMG_0754-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0754-480.webp 480w, /images/gallery/IMG_0754-960.webp 960w, /images/gallery/IMG_0754-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0754-480.jpg 480w, /images/gallery/IMG_0754-960.jpg 960w, /images/gallery/IMG_0754-1600.jpg 1600w"
+      },
+      "sourceSize": 1972347,
+      "sourceMtimeMs": 1793901435333
+    },
+    {
+      "id": "IMG_0755",
+      "filename": "IMG_0755.HEIC",
+      "width": 3024,
+      "height": 4032,
+      "aspectRatio": 0.75,
+      "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoPABQAPzmGulOvKSWisAgB4CcJbACdLwAB0YIawZd7zy70AP5wuq/1KOXvZB8SP//oXOmeV21V9aynmnmwcDuST7SbLc+RZ1ghh8nJJJC7uxJuTU4u8AAA",
+      "sources": [
+        {
+          "width": 480,
+          "height": 640,
+          "webp": "/images/gallery/IMG_0755-480.webp",
+          "jpeg": "/images/gallery/IMG_0755-480.jpg"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "webp": "/images/gallery/IMG_0755-960.webp",
+          "jpeg": "/images/gallery/IMG_0755-960.jpg"
+        },
+        {
+          "width": 1600,
+          "height": 2133,
+          "webp": "/images/gallery/IMG_0755-1600.webp",
+          "jpeg": "/images/gallery/IMG_0755-1600.jpg"
+        }
+      ],
+      "srcset": {
+        "webp": "/images/gallery/IMG_0755-480.webp 480w, /images/gallery/IMG_0755-960.webp 960w, /images/gallery/IMG_0755-1600.webp 1600w",
+        "jpeg": "/images/gallery/IMG_0755-480.jpg 480w, /images/gallery/IMG_0755-960.jpg 960w, /images/gallery/IMG_0755-1600.jpg 1600w"
+      },
+      "sourceSize": 2200681,
+      "sourceMtimeMs": 1793901433234
     }
   ]
 }
