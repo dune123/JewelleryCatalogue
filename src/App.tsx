@@ -22,7 +22,7 @@ function JsonLd() {
     description: site.description,
     url: site.url,
     email: site.email,
-    telephone: site.phone,
+    telephone: site.phones.map((phone) => `+91${phone.number.replace(/\D/g, '')}`),
     slogan: site.tagline,
     address: site.address,
   }

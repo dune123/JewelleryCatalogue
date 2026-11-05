@@ -17,10 +17,12 @@ export const site = {
   whatsappNumber: '910000000000',
   // TODO: replace with the studio email address
   email: 'hello@princejewellery.example',
-  // TODO: replace with the studio phone number
-  phone: '+91 00000 00000',
-  // TODO: replace with the studio address
-  address: 'Prince Jewellery, Your City, India',
+  phones: [
+    { number: '9810748016', label: 'Sanjay Chauhan' },
+    { number: '9212653922', label: 'Sanjay Chauhan' },
+    { number: '85272 79516', label: '' },
+  ],
+  address: 'A-4/204, Sector-17, Hanuman Market, Rohini, Delhi-110089',
   social: {
     // TODO: replace with the Instagram profile URL
     instagram: 'https://instagram.com/',

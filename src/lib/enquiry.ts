@@ -23,9 +23,9 @@ export function mailtoHref(subject: string, body: string) {
   return `mailto:${site.email}?${params.toString()}`
 }
 
-export function phoneHref() {
-  const digits = site.phone.replace(/[^\d+]/g, '')
-  return digits ? `tel:${digits}` : null
+export function phoneHref(number: string) {
+  const digits = number.replace(/\D/g, '')
+  return digits ? `tel:+91${digits}` : null
 }
 
 /** WhatsApp when a number is set, otherwise email. */
