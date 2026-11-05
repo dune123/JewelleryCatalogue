@@ -173,8 +173,7 @@ export function Lightbox({ items, index, onClose, onIndex }: LightboxProps) {
 
       <div className="pad-safe mx-auto flex w-full max-w-3xl flex-col items-start gap-4 py-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="font-label text-[0.68rem] uppercase tracking-[0.24em] text-ivory/70">{item.category}</p>
-          <h2 className="mt-2 font-display text-3xl font-normal">{item.name}</h2>
+          <h2 className="font-display text-3xl font-normal">{item.name}</h2>
           {item.description ? <p className="mt-3 max-w-md text-sm leading-relaxed text-ivory/80">{item.description}</p> : null}
           <div className="mt-3">
             <Price item={item} inverse />

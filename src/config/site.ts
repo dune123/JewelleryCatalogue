@@ -43,7 +43,7 @@ export const site = {
   collections: {
     eyebrow: 'Collections',
     title: 'The edit',
-    intro: 'Browse by form. Every photograph is a piece you can enquire about.',
+    intro: 'Every photograph is a piece you can enquire about.',
   },
   lookbook: {
     eyebrow: 'Lookbook',

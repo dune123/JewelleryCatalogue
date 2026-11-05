@@ -6,7 +6,7 @@ import { PhotoImage } from '../components/PhotoImage'
 import { Price } from '../components/Price'
 import { SectionHeading } from '../components/SectionHeading'
 import { site } from '../config/site'
-import { catalog, collectionFilters, type CatalogItem, type CollectionFilter } from '../data/catalog'
+import { catalog, type CatalogItem } from '../data/catalog'
 
 const BATCH = 12
 
@@ -16,49 +16,16 @@ type CollectionsProps = {
 
 export function Collections({ onOpen }: CollectionsProps) {
   const reduce = useReducedMotion()
-  const [filter, setFilter] = useState<CollectionFilter>('All')
   const [count, setCount] = useState(BATCH)
-  const filtered = catalog.filter((item) => filter === 'All' || item.category === filter)
-  const visible = filtered.slice(0, count)
+  const visible = catalog.slice(0, count)
 
   return (
     <section id="collections" className="py-24 sm:py-32">
       <div className="shell">
         <SectionHeading eyebrow={site.collections.eyebrow} title={site.collections.title} intro={site.collections.intro} />
 
-        <div className="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
-          {collectionFilters.map((option) => {
-            const selected = option === filter
-            return (
-              <button
-                key={option}
-                type="button"
-                aria-pressed={selected}
-                onClick={() => {
-                  setFilter(option)
-                  setCount(BATCH)
-                }}
-                className={`relative min-h-11 rounded-full px-5 font-label text-[0.68rem] font-medium uppercase tracking-[0.18em] ${
-                  selected ? 'text-bg' : 'text-fg'
-                }`}
-              >
-                {selected ? (
-                  <motion.span
-                    layoutId="collection-filter"
-                    className="absolute inset-0 rounded-full bg-fg"
-                    transition={{ duration: reduce ? 0 : 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  />
-                ) : (
-                  <span className="absolute inset-0 rounded-full shadow-[inset_0_0_0_1px_color-mix(in_srgb,var(--fg)_16%,transparent)]" />
-                )}
-                <span className="relative z-10">{option}</span>
-              </button>
-            )
-          })}
-        </div>
-
-        <p className="mt-6 font-label text-[0.68rem] uppercase tracking-[0.18em] text-muted" aria-live="polite">
-          {filtered.length === 0 ? 'Nothing in this edit yet' : `${Math.min(count, filtered.length)} of ${filtered.length}`}
+        <p className="mt-10 font-label text-[0.68rem] uppercase tracking-[0.18em] text-muted" aria-live="polite">
+          {catalog.length === 0 ? 'Nothing in this edit yet' : `${Math.min(count, catalog.length)} of ${catalog.length}`}
         </p>
 
         {visible.length === 0 ? (
@@ -83,7 +50,7 @@ export function Collections({ onOpen }: CollectionsProps) {
                 >
                   <button
                     type="button"
-                    onClick={() => onOpen(filtered, filtered.findIndex((entry) => entry.id === item.id))}
+                    onClick={() => onOpen(catalog, catalog.findIndex((entry) => entry.id === item.id))}
                     className="block text-left"
                     aria-label={`View ${item.name}`}
                   >
@@ -110,7 +77,7 @@ export function Collections({ onOpen }: CollectionsProps) {
           </motion.div>
         )}
 
-        {count < filtered.length ? (
+        {count < catalog.length ? (
           <div className="mt-12 flex justify-center">
             <button
               type="button"

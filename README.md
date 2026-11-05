@@ -32,19 +32,16 @@ Commit `public/images/gallery` and `src/data/photos.generated.json` before deplo
 
 Save on a card, in the lookbook, or in the lightbox. The header bookmark opens the selection. Each saved piece stores its number, name, and image path in that browser’s local storage under the key `prince-cart`. Nothing is sent to a server. Clearing the browser’s site data removes the list.
 
-## Edit names, prices, and categories
+## Edit names and prices
 
 Open `src/data/catalog.ts` and edit the `pieces` array. Match `id` to the filename without its extension (`IMG_0613.HEIC` → `IMG_0613`).
 
 - `name` — shown on the card, in the lightbox, and in the enquiry message
-- `category` — `Necklaces`, `Earrings`, `Rings`, `Bracelets`, or `Other`
 - `price` — optional number. Leave it out to show “Enquire for price”
 - `salePrice` — optional. When it is lower than `price`, the card shows a Sale badge
 - `description` — optional sentence in the lightbox
 - `featured` — used in the hero and the About photograph, and left out of the lookbook
 - `photoStyle` — `white-background`, `grey-background`, `with-model`, or `creative`
-
-The photographs currently in the folder are idols, coins, and gift pieces, so they are filed under Other. Change the category when you know where a piece belongs.
 
 ## Change the tagline and contact details
 
